@@ -1,0 +1,4 @@
+[yc_vms]
+%{ for ip in yc_vm_ips ~}
+${ip} ansible_user=vmuser
+%{ endfor ~}
